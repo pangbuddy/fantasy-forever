@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<sourceResultFile separator=";" dimension="50" firstLine="1" firstRow="1" lastRow="6">
+		job/euromillions/EuroMillionsGameData.csv
+	</sourceResultFile>
+	<exported-binary-result-file enable="true">
+		EuroMillionsGameData-binary.csv
+	</exported-binary-result-file>
+</config>
