@@ -12,11 +12,6 @@ import com.aooci.ff.util.DataLoader;
 public class FantasyForever {
 	private static Logger log = Logger.getLogger(FantasyForever.class);
 
-	public static final String CONFIG_FILE = "config.xml";
-	public static final String ARG_TRAINING = "-train";
-	public static final String ARG_APPLY = "-apply";
-	public static final String ARG_TEST = "-test";
-
 	
 	public static void displayWelcome() {
 		displayHelp();
@@ -24,17 +19,13 @@ public class FantasyForever {
 	
 	public static void displayHelp() {
 		displaySystemInfo();
-		System.out.println( "Usage: java com.aooci.lotto.Console [OPTIONS]\n" +
-				ARG_TRAINING + " <Min Error> <Date started Loading>               Training\n" +
-				ARG_APPLY + " <year> <month> <day>          Apply\n" +
-				ARG_TEST + " <Minimal hits> <Top numbers>           Apply Test\n"
+		System.out.println( "Usage: java com.aooci.lotto.Console [OPTIONS]\n"
                 );
 		System.out.println();
         System.out.println("=========================================================");
 	}
 	
 	public static void displaySystemInfo(){
-		
 		System.out.println("Operation System:"+System.getProperty("os.name")
 				+"("+System.getProperty("os.arch")
 				+") Version:"+System.getProperty("os.version"));
