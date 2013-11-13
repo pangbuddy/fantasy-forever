@@ -38,12 +38,8 @@ public class DataLoader {
 		    	boolean[] row = new boolean[dimension];
 		    	for(int i=firstRow;i<lastRow;i++){
 		    		row[Integer.parseInt(nextLine[i])-1] = true;
-		    		System.out.print(nextLine[i] + ", ");
 		    	}
-		    	System.out.println();
-		    	
 		    	results.put(nextLine[0], row);
-		    	
 		    	rowToWrite[0] = nextLine[0];
 		    	for(int i=0;i<dimension;i++){
 		    		rowToWrite[i+1] = String.valueOf(row[i]);
